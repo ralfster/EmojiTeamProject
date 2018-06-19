@@ -1,0 +1,794 @@
+/* CSS SOHO */
+
+body {
+    background-color: #000000;
+    width: 100%;
+     margin: 0;
+    padding: 0;
+}
+
+/*----------------------------------------------------------top------------*/
+
+.content {
+    background-color: white;
+}
+
+#logo {
+    position: absolute;
+    height: 10%;
+    width: auto;
+    left: 2%;
+    top: 4%;
+}
+
+#lydikontekst {
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 3px 1px black;
+}
+
+#lydikon {
+    position: absolute;
+    top: 67%;
+    left: 33%;
+
+
+}
+
+#banner {
+    position: absolute;
+    top: 30%;
+    font-size: 5rem;
+    left: 37%;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 3px 1px black;
+}
+
+#bannerundertekst {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+    top: 45%;
+    font-size: 3rem;
+    left: 38.5%;
+    text-shadow: 3px 1px black;
+
+}
+
+#scrolltekst {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+    top: 75%;
+    left: 70.8%;
+    font-size: 2rem;
+    text-shadow: 3px 1px black;
+}
+
+#scrollmus {
+    position: absolute;
+    top: 82%;
+    left: 72%;
+}
+
+#scrollpil {
+    height: 5%;
+    width: auto;
+    position: absolute;
+    top: 93.5%;
+    left: 73.3%;
+    animation-name: pil;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/* ---------------------------------Slut på første slide intro-------------*/
+
+/*- -------------------------------------------------readmore pile---------*/
+
+
+#readmore1 {
+        padding-left: 0%;
+        height: 20px;
+        width: 30px;
+        cursor: pointer;
+}
+
+#readmore1:hover {
+    animation-name: laesmerepil;
+    animation-iteration-count: infinite;
+    animation-duration: 2.7s;
+}
+
+#readmore2 {
+    padding-left: 0%;
+        height: 20px;
+        width: 30px;
+        cursor: pointer;
+}
+
+#readmore2:hover {
+    animation-name: laesmerepil;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+
+
+
+/*------Content---- */
+
+/*---------------------------------------------------------------2---------*/
+
+#historietekst {
+    position: absolute;
+    top: 125%;
+    left: 6%;
+    font-size: 1.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    z-index: 2;
+    width: 40%;
+    line-height: 150%;
+    background-color: white;
+    opacity: 0.8;
+    border: 4px;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+/*------------------------------------------------------4------------------*/
+
+.bigbox {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#tekstkollage {
+position: absolute; 
+font-size: 1.5rem;
+font-family: 'Josefin Sans',
+sans-serif;
+z-index: 2;
+left: 5%;
+top: 340%;
+background-color: white;
+opacity: 0.9;
+border: 4px;
+border-radius: 10px;
+width: 600px;
+padding: 10px;
+line-height: 150%;
+}
+
+#kollage {
+    margin-left: auto;
+    margin-top: 10px;
+        
+}
+
+/*------------------------------------------------------5------------------*/
+
+#deskbillede {
+    margin-top: 30px ;
+    
+}
+
+#desktekst {
+    
+    position: absolute;
+    top: 435%;
+    left: 5%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.1rem;
+    color: #000000;
+    
+}
+#desktekstsoho {
+    
+    position: absolute;
+    top: 439%;
+    left: 5%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.9rem;
+    color: #000000;
+    
+}
+
+/*--------Content slut-----*/
+
+/*-----------------------------------------------------Animationer---------*/
+
+
+
+@keyframes pil {
+    0% {
+        transform: translateY(-10px)
+    }
+    50% {
+        transform: translateY(+10px)
+    }
+    100% {
+        transform: translateY(-10px)
+    }
+}
+
+@keyframes laesmerepil {
+    0% {
+        transform: translateY(-3px)
+    }
+    50% {
+        transform: translateY(+3px)
+    }
+    100% {
+        transform: translateY(-3px)
+    }
+}
+
+/*---------------------------------------------1600px prosjektor--------------------*/
+
+
+@media screen and (max-width: 1600px) {
+
+    
+
+    #logo {
+        height: 43%;
+        left: 2.5%;
+        top: 4.5%;
+    }
+
+    #banner {
+        top: 28%;
+        font-size: 3.7rem;
+        left: 34%;
+    }
+
+    #bannerundertekst {
+
+        top: 44.3%;
+        font-size: 2rem;
+        left: 35.2%;
+    }
+
+    #lydikontekst {
+        top: 59.5%;
+        left: 18%;
+        font-size: 1.5rem;
+    }
+
+    #lydikon {
+        top: 62.5%;
+        left: 25%;
+    }
+
+    #scrolltekst {
+        top: 59%;
+        left: 70.8%;
+        font-size: 1.5rem;
+    }
+
+    #scrollmus {
+        top: 66%;
+        width: 3.9%;
+        height: 5.6%;
+        left: 72.4%;
+    }
+
+    #scrollpil {
+        height: 4%;
+        top: 73.5%;
+        left: 73.3%;
+        animation-duration: 2.5s;
+
+    }
+
+    #historietekst {
+        top: 125%;
+        left: 30px;
+        font-size: 1.5rem;
+        width: 55%;
+        line-height: 120%;
+    }
+    
+    #kollage {
+    margin-right: 30px;
+    
+    }
+    
+    #tekstkollage {
+ 
+    font-size: 1.2rem;
+    left: 30px;
+    top: 360%;
+    width: 435px;
+    line-height: 130%;
+    }
+    
+    #desktekst {
+    
+    top: 466%;
+    left: 5%;
+    font-size: 1.5rem;
+    
+    
+}
+    #desktekstsoho {
+    
+    top: 470%;
+    left: 5%;
+    font-size: 1.5rem;
+    
+}
+
+
+}
+/*------------------------------------------1535px prosjektor Skole---------*/
+
+@media screen and (max-width: 1535px) {
+
+    
+
+    #logo {
+        height: 10%;
+        left: 2.5%;
+        top: 4.5%;
+    }
+
+    #banner {
+        top: 28%;
+        font-size: 3.7rem;
+        left: 34%;
+    }
+
+    #bannerundertekst {
+
+        top: 42.3%;
+        font-size: 1.9rem;
+        left: 35.2%;
+    }
+
+    #lydikontekst {
+        top: 59.5%;
+        left: 18%;
+        font-size: 1.5rem;
+    }
+
+    #lydikon {
+        top: 62.5%;
+        left: 25%;
+    }
+
+    #scrolltekst {
+        top: 59%;
+        left: 70.8%;
+        font-size: 1.5rem;
+    }
+
+    #scrollmus {
+        top: 66%;
+        width: 3.9%;
+        height: 5.6%;
+        left: 72.4%;
+    }
+
+    #scrollpil {
+        height: 4%;
+        top: 73.5%;
+        left: 73.2%;
+        animation-duration: 2.5s;
+
+    }
+
+    #historietekst {
+        top: 105%;
+        left: 30px;
+        font-size: 1.4rem;
+        width: 55%;
+        line-height: 110%;
+    }
+    
+    #kollage {
+    margin-right: 30px;
+    
+    }
+    
+    #tekstkollage {
+ 
+    font-size: 1.2rem;
+    left: 30px;
+    top: 315%;
+    width: 435px;
+    line-height: 130%;
+    }
+    
+    #desktekst {
+    
+    top: 412%;
+    left: 5%;
+    font-size: 1.5rem;
+    
+    
+}
+    #desktekstsoho {
+    
+    top: 416%;
+    left: 5%;
+    font-size: 1.5rem;
+    
+}
+
+
+}
+/*---------------------------------------------1280px prosjektor--------------------*/
+
+
+@media screen and (max-width: 1280px) {
+
+    
+
+    #logo {
+        height: 13%;
+        left: 2.5%;
+        top: 4.5%;
+    }
+
+    #banner {
+        top: 28%;
+        font-size: 3.7rem;
+        left: 34%;
+    }
+
+    #bannerundertekst {
+
+        top: 44%;
+        font-size: 2rem;
+        left: 35.2%;
+    }
+
+    #lydikontekst {
+        top: 59.5%;
+        left: 18%;
+        font-size: 1.5rem;
+    }
+
+    #lydikon {
+        top: 62.5%;
+        left: 25%;
+    }
+
+    #scrolltekst {
+        top: 59%;
+        left: 70.8%;
+        font-size: 1.5rem;
+    }
+
+    #scrollmus {
+        top: 67%;
+        width: 3.9%;
+        height: 5.6%;
+        left: 73%;
+    }
+
+    #scrollpil {
+        height: 4%;
+        top: 74.6%;
+        left: 73.8%;
+        animation-duration: 2.5s;
+
+    }
+
+    #historietekst {
+        top: 125%;
+        left: 30px;
+        font-size: 1.4rem;
+        width: 55%;
+        line-height: 110%;
+    }
+    
+    #kollage {
+    margin-right: 30px;
+    
+    }
+    
+    #tekstkollage {
+ 
+    font-size: 1.2rem;
+    left: 30px;
+    top: 355%;
+    width: 435px;
+    line-height: 130%;
+    }
+    
+    #desktekst {
+    
+    top: 466%;
+    left: 5%;
+    font-size: 1.5rem;
+    
+    
+}
+    #desktekstsoho {
+    
+    top: 470%;
+    left: 5%;
+    font-size: 1.5rem;
+    
+}
+
+
+}
+/*---------------------------------------------1200px---------------------*/
+
+@media screen and (max-width: 1200px) {
+
+    
+    
+    #logo {
+        height: 9%;
+        left: 1%;
+        top: 3%;
+    }
+
+    #banner {
+        top: 24%;
+        font-size: 2.8rem;
+        left: 36%;
+    }
+
+    #bannerundertekst {
+
+        top: 32.5%;
+        font-size: 1.6rem;
+        left: 37.2%;
+    }
+
+    #lydikontekst {
+        top: 46.5%;
+        left: 20%;
+        font-size: 1.4rem;
+    }
+
+    #lydikon {
+        top: 64%;
+        left: 33%;
+    }
+
+    #scrolltekst {
+        top: 46%;
+        left: 70.8%;
+        font-size: 1.4rem;
+    }
+
+    #scrollmus {
+        top: 50.5%;
+        width: 5%;
+        height: 5%;
+        left: 73%;
+    }
+
+    #scrollpil {
+        height: 3%;
+        top: 56.9%;
+        left: 74.1%;
+        animation-duration: 2.5s;
+
+    }
+
+    #historietekst {
+        top: 80%;
+        left: 6%;
+        font-size: 1.2rem;
+        width: 51%;
+        line-height: 110%;
+    }
+
+    #tekstkollage {
+    font-size: 1.1rem;
+    left: 5%;
+    top: 225%;
+    width: 400px;
+    line-height: 110%;
+    }
+    
+    #desktekst {
+    top: 275%;
+    left: 5%;
+    font-size: 1.2rem;  
+}
+    
+    #desktekstsoho {
+    top: 278%;
+    left: 5%;
+    font-size: 1.2rem;
+    
+}
+}
+/*-----------------------------------------------------Ipad version--------*/
+
+@media screen and (max-width: 768px) {
+
+    
+    
+
+    #logo {
+        height: 8%;
+        left: 2%;
+        top: 4%;
+    }
+
+    #banner {
+        top: 8%;
+        font-size: 3rem;
+        left: 25%;
+    }
+
+    #bannerundertekst {
+
+        top: 16.5%;
+        font-size: 1.7rem;
+        left: 27.5%;
+    }
+
+    #lydikontekst {
+        top: 24%;
+        left: 20%;
+        font-size: 1.2rem;
+    }
+
+    #lydikon {
+        top: 65%;
+        left: 33%;
+    }
+
+    #scrolltekst {
+        top: 24%;
+        left: 70.8%;
+        font-size: 1.2rem;
+    }
+
+    #scrollmus {
+        top: 28.5%;
+        width: 8%;
+        height: 5%;
+        left: 72%;
+    }
+
+    #scrollpil {
+        height: 3%;
+        top: 34.7%;
+        left: 74%;
+        animation-duration: 2.5s;
+
+    }
+
+   
+
+    #historietekst {
+        top: 46%;
+        left: 2%;
+        font-size: 0.9rem;
+        width: 61%;
+        line-height: 110%;
+
+    }
+
+    #tekstkollage {
+    font-size: 0.8rem;
+    left: 2%;
+    top: 146%;
+    width: 280px;
+    line-height: 150%;
+    }
+    
+    #desktekst {
+    top: 180%;
+    left: 5%;
+    font-size: 1.2rem;
+    
+    
+}
+    #desktekstsoho {
+    
+    top: 183%;
+    left: 5%;
+    font-size: 1.2rem;
+    
+}
+
+}
+
+/*----------------------------------------------------Mobil version---------*/
+
+@media screen and (max-width: 480px) {
+
+
+
+    #logo {
+        height: 5%;
+        left: 2%;
+        top: 1%;
+    }
+
+    #banner {
+        top: 4%;
+        font-size: 2rem;
+        left: 26%;
+    }
+
+    #bannerundertekst {
+        top: 10%;
+        font-size: 1.3rem;
+        left: 29%;
+    }
+
+    #lydikontekst {
+        top: 14%;
+        left: 20%;
+        font-size: 0.9rem;
+    }
+
+    #lydikon {
+        top: 65%;
+        left: 33%;
+        width: 25%;
+    }
+
+    #scrolltekst {
+        top: 14%;
+        left: 70%;
+        font-size: 0.9rem;
+    }
+
+    #scrollmus {
+        top: 17%;
+        width: 7%;
+        height: 3%;
+        left: 74%;
+    }
+
+    #scrollpil {
+        height: 2%;
+        top: 21%;
+        left: 75.3%;
+    }
+
+    #historietekst {
+        top: 27%;
+        left: 1%;
+        font-size: 0.5rem;
+        width: 66%;
+        line-height: 130%;
+    }
+   
+    
+    #tekstkollage {
+    font-size: 0.6rem;
+    left: 2%;
+    top: 86%;
+    width: 165px;
+    line-height: 140%;
+    }
+    
+    #desktekst {
+    
+    top: 117%;
+    left: 5%;
+    font-size: 0.8rem;
+    
+    
+}
+    #desktekstsoho {
+    
+    top: 119%;
+    left: 5%;
+    font-size: 0.8rem;
+    
+}
+}

@@ -1,44 +1,109 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CSS Grid Layout</title>
-    <link rel="stylesheet" type="text/css" href="css-grid-layout.css">
+<html lang="da">
+
+<head>
+    <meta charset="utf-8" />
+    <title>SOHO Aarhus</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <link href="css/Skyle.css" rel="stylesheet">
+
+        <!-- Link til google fonts og icons  -->
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 </head>
+
 <body>
 
+    <main class="content">
+        <!-- Intro-------------------------------------------------------->
+        <article>
+            <img id="logo" src="img/logosoho.png">
+            <div id="lydikontekst"><img id="lydikon" src="img/speakericon.png" height="80%" width="auto">
+                <p>Bedre med lyd</p>
+            </div>
+            <h1 id="banner">"SOHO Aarhus"</h1>
+            <div id="bannerundertekst">-Since 1984</div>
+            <video src="vids/Intro.mp4" autoplay loop muted width="100%" height="auto"></video>
+            <p id="scrolltekst">  Scroll ned</p>
+            <img id="scrollmus" src="img/mouseicon.png" height="10%" width="auto">
+            <img id="scrollpil" src="img/simledownarrow.png">
+        </article>
 
-<div class="container">
+        <!-- SOHOs historie----------------------------------------------->
+        <article class="slide2">
+            <picture>
+            <source srcset="img/butik%20sohomedlogosmall.jpg" media="(max-width: 768px)" >
+            <source srcset="img/butik%20sohomedlogomedium.jpg" media="(max-width: 1535px)"> 
+            <img src="img/butik%20sohomedlogo.jpg" width="100%" height="auto">
+            </picture>
+            
+            <p id="historietekst">To kvinder ville sætte et nyt præg på herremoden i Aarhus. <br><img id="readmore1" src="img/laesmere.png"></p>
+        </article>
+
+        <!-- Montage video----------------------------------------------->
+        <article id="slide3">
+            <div class="bigbox">
+
+                <video id="billedebox4" src="vids/montagevideo.mp4" controls width="100%" height="100%"></video>
+                
+
+            </div>
+        </article>
+
+       <!-- SOHO kollage----------------------------------------------->
+        <article id="slide4">
+            <div class="bigbox">
+                
+
+                  <p id="tekstkollage">Vi er SOHO! <br><img id="readmore2" src="img/laesmere.png"></p>
+
+               
+               
+           
+            <source srcset="img/Kollage%20SOHOnysmall.jpg" media="(max-width: 768px)" >
+            <source srcset= "img/Kollage%20SOHOnymeduim.jpg" media="(max-width: 1535px)" > 
+            <img id="kollage" src="img/Kollage%20SOHOny.jpg" width="60%" height="100%">
+           
+                
+               
+             </div>  
+        </article>
+
+        <!-- Aflustnings slid------------------------------------------->
+        <article id="slide5">
+            
+                
+
+               <p id="desktekst"> ”Vi glæder os til at se dig i forretningen” </p>
+               <p id="desktekstsoho"> - SOHO</p>
+
+               
+               
+            <picture>
+            <source srcset="img/Soho%20desk%20med%20tshirtfsmall.jpg" media="(max-width: 768px)" >
+            <source srcset="img/Soho%20desk%20med%20tshirtfmedium.jpg" media="(max-width: 1535px)"> 
+            <img id="deskbillede" src="img/Soho%20desk%20med%20tshirtf.jpg" width="100%" height="100%">
+            </picture>
+               
+               
+               
+               
+               
+               
+                
+
+        </article>
+
+        <!-- Webdoc slut ----------------------------------------------->
         
-    <header>
-        <nav>
-            <li><a href="#"><h1>Header</h1></a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-        </nav>
-        <button>Button</button>
-    </header>
+    </main>
+        <!-- Javascript link ------------------------------------------->
 
-    <section class="main">
-        <h2>CSS Grid Layout</h2>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-        <img src="https://unsplash.it/500/550?image=116">        
-    </section>
-
-    <aside class="sidebar">
-        <h3>Sidebar</h3>
-    </aside>
-
-    <footer>
-        <h3>Footer</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    </footer>
-
-</div>
-
-
+    <script src="soho.js"></script>
 </body>
+
 </html>
